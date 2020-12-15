@@ -7,6 +7,43 @@
   <link rel="shortcut icon" href="img/todoListFavicon.png" type="image/x-icon">
 </head>
 <body>
-  
+  <div id="app">
+    
+    <!--Logotipo do Todolis-->
+    <div class="center">
+      <img src="img/todoList.png">
+    </div>
+
+    <!--Conteúde destinado para usuários não atutenticados-->
+    <div id="auth" class="center">
+    <!--Formulário de autenticação-->  
+      <form id="authFrom">
+        <h3 id="authFormTitle">Acesse a sua conta para continuar</h3>
+
+        <label for="email">Email: </label>
+        <input type="email" placeholder="E-mail" id="email">
+
+        <label for="password">Senha: </label>
+        <input type="password" placeholder="Senha" id="password">
+
+        <button type="submit" id="submitAuthFrom">Acessar</button>
+
+      </form>
+
+      <!--Alternar o formulário de autenticação para o cadastro de novas contas-->
+      <p id="register">
+        Não possui uma conta?
+        <button onclick="toggleToRegister()" class="alternative">Cadastrar uma nova conta</button>
+      </p>
+      
+      <!--Alternar o formulário de autenticação para o cadastro de novas contas-->
+      <p id="access" class="startHidden">
+        Já possui uma conta?
+        <button onclick="toggleToAccess()" class="alternative">Acesse a sua conta</button>
+      </p>
+
+    </div>
+  </div>
+
 </body>
 </html>
