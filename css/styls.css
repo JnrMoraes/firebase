@@ -58,3 +58,8 @@ p{
   display: none;
 }
 
+#loading{
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+}
