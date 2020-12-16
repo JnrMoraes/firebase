@@ -1,0 +1,60 @@
+body{
+  color: #444;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  height: 96vh;
+}
+
+h3{
+  margin: 6px;
+}
+input{
+  width:80%;
+  margin: 6px;
+  padding:6px;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  /* outline: none; */
+}
+
+button{
+  background-color: #4c4;
+  font-size: 15px;
+  color: bisque;
+  padding: 4px;
+  margin: 6px;
+  border-radius: 8px;
+  border: 1px solid #4c4;  
+}
+button:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+p{
+  margin: 0px;
+}
+.alternative{
+  background-color: #44f;
+  border: 1px solid #44f;
+}
+
+#app{
+  width: 512px;
+  margin: auto;
+  box-shadow: 4px 4px 20px #888;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+
+.center{
+  text-align: center;
+
+}
+
+.startHidden{
+  display: none;
+}
+

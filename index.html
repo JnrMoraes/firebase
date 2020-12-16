@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TodoList</title>
   <link rel="shortcut icon" href="img/todoListFavicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styls.css">
+  
 </head>
 <body>
   <div id="app">
@@ -27,7 +29,6 @@
         <input type="password" placeholder="Senha" id="password">
 
         <button type="submit" id="submitAuthFrom">Acessar</button>
-
       </form>
 
       <!--Alternar o formulário de autenticação para o cadastro de novas contas-->
@@ -36,7 +37,7 @@
         <button onclick="toggleToRegister()" class="alternative">Cadastrar uma nova conta</button>
       </p>
       
-      <!--Alternar o formulário de autenticação para o cadastro de novas contas-->
+      <!--Alternar o formulário de autenticação para o acesso de contas já contas-->
       <p id="access" class="startHidden">
         Já possui uma conta?
         <button onclick="toggleToAccess()" class="alternative">Acesse a sua conta</button>
