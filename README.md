@@ -1,2 +1,2 @@
 # firebase
-Proejto de estudo usando firebase
+Projeto de estudo usando firebase
