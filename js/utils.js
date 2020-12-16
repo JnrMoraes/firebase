@@ -4,6 +4,9 @@ var authFormTitle = document.getElementById('authFormTitle')
 var register = document.getElementById('register')
 var access = document.getElementById('access')
 var loading = document.getElementById('loading')
+var auth = document.getElementById('auth')
+var userContent = document.getElementById('userContent')
+var userEmail = document.getElementById('userEmail')
 
 // Alterar o formulário de autenticação para o cadastro de novas contas
 function toggleToRegister() {
@@ -29,4 +32,19 @@ function showItem(element){
 // Simplifica a remoção de elementos da página
 function hideItem(element){
   element.style.display = 'none'
+}
+
+// Mostrar conteudo para usuários autenticados
+function showUserContent(user) {
+  userEmail.innerHTML = user.email
+  hideItem(auth)
+  showItem(userContent)
+}
+
+// Mostrar conteudo para usuários não autenticados
+function showAuth() {
+  authForm.email.value = ''
+  authForm.password.value = ''
+  hideItem(userContent)
+  showItem(auth)
 }

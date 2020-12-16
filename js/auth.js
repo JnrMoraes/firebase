@@ -1,3 +1,4 @@
+// Trata a submissão do formulário de autenticação
 authForm.onsubmit = function(event) {
   showItem(loading)
   event.preventDefault()
@@ -16,14 +17,24 @@ authForm.onsubmit = function(event) {
   }
 }
 
-// Gerenciamaneto de estado
+// Gerenciamaneto de estado - centraliza e trata a autenticação
 
 firebase.auth().onAuthStateChanged(function (user){
   hideItem(loading)
   if(user){
-    console.log('Usuário autenticado')
-    console.log(user)
+    showUserContent(user)
+    // console.log('Usuário autenticado')
+    // console.log(user) // contém conteudo delicado para ser exibido ao usuário - não usar em prod
   } else {
-    console.log('Usuário não autenticado')
+    showAuth()
+    // console.log('Usuário não autenticado')
   }
 })
+
+//Função que permite o usuário sair da contas
+function signOut(params) {
+  firebase.auth().signOut().catch(function (error) {
+    console.log('Falha ao sair da conta')
+    console.log(error)
+  })
+}
