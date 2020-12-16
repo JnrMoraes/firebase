@@ -7,7 +7,7 @@ var access = document.getElementById('access')
 
 // Alterar o formulário de autenticação para o cadastro de novas contas
 function toggleToRegister() {
-  authForm.submitAuthFrom.innerHTML = 'Cadastrar conta'
+  authForm.submitAuthForm.innerHTML = 'Cadastrar conta'
   authFormTitle.innerHTML = 'Insira seus dados para se cadastrar'
   hideItem(register)
   showItem(access)
@@ -15,7 +15,7 @@ function toggleToRegister() {
 
 // Alterar o formulário de autenticação para acesso de contas já existentes
 function toggleToAccess() {
-  authForm.submitAuthFrom.innerHTML = 'Acessar conta'
+  authForm.submitAuthForm.innerHTML = 'Acessar conta'
   authFormTitle.innerHTML = 'Acesse a sua conta para continuar'
   hideItem(access)
   showItem(register)
